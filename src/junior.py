@@ -3,6 +3,9 @@
 
 print("[INFO] Initializing")
 
+print("[INFO] Importing error reporters")
+from junior_functions.junior_error_check.network_error import *
+
 print("[INFO] Importing fundamental funtionalities")
 from junior_functions.junior_fundamental_ops.query import *
 from junior_functions.junior_fundamental_ops.communication import *
@@ -15,6 +18,9 @@ from junior_functions.junior_advanced_ops.conversation import *
 from junior_functions.junior_advanced_ops.q_and_a import *
 from junior_functions.junior_advanced_ops.recorder import *
 from junior_functions.junior_advanced_ops.recogniser import *
+
+if network_status() == False:
+    print("[INFO] Network Unavailable")
 
 while True:
     text = listen()

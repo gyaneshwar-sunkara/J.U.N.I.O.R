@@ -1,22 +1,14 @@
+from junior_functions.junior_error_check.network_error import *
+
 import speech_recognition as sr
 import winsound
-import socket
 import pyttsx3
-
-def network_status():
-    try:
-        socket.create_connection(("www.google.com", 80))
-        return True
-    except OSError as err: pass
-    return False
 
 def offline():
     sample_rate = 44100
     chunk_size = 1024
     device_id = 1
-
     r = sr.Recognizer()
-
     with sr.Microphone(device_index = device_id,sample_rate = sample_rate, chunk_size = chunk_size) as source:
         while True:
             r.adjust_for_ambient_noise(source)

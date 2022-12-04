@@ -12,7 +12,7 @@ Face Recognition<br>
 |---------Developers-----------|<br>
 **Core NLP**<br>
 Cosine similarity function works fine but not an apt solution.<br>
-Need for improvising retrieval to generative.<br>
+Need for improvising with the neural schema... retrieval to generative.<br>
 Introduce Generative based RNN's making junior intelligent.<br>
 <br>
 **Testing**<br>
